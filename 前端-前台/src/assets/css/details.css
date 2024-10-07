@@ -1,0 +1,102 @@
+.header {
+  /* 宽度 */
+  width: 1600px;
+  height: 80px; /* 高度 */
+  margin: 0 auto;
+}
+nav ul {
+  display: flex;
+}
+nav a {
+  display: block;
+  color: #333;
+  height: 100%;
+  line-height: 38px;
+  padding: 0 14px;
+  min-width: 36px;
+  text-align: center;
+}
+/* 头部开始 */
+.header,
+.top-left,
+.header-right {
+  display: flex; /* 使用flex布局 */
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+}
+.header-right {
+  /* 绝对定位 */
+  position: absolute;
+  /* 右边距 */
+  right: 0px;
+}
+/* 搜索 */
+.top-search {
+  width: 350px; /* 宽度 */
+  height: 34px; /* 高度 */
+  background-color: #f3f6f8; /* 背景颜色 */
+  border: 1px solid #dfdfdf; /* 边框颜色 */
+  border-radius: 4px; /* 圆角 */
+  line-height: 32px; /* 行高 */
+  position: relative; /* 相对定位 */
+}
+
+/* 搜索框 */
+.top-search input {
+  background: none;
+  border: 0; /* 边框 */
+  font-size: 14px;
+  height: 28px;
+  line-height: 22px;
+  padding: 4px 10px;
+  width: 287px;
+  outline: none;
+}
+
+/* 搜索按钮 */
+.top-search button {
+  border: 0;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 6px 10px;
+  position: absolute; /* 绝对定位 */
+  right: 0;
+  top: 0;
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  border-radius: 4px; /* 圆角 */
+}
+/* 头部结束 */
+/* 文章列表开始 */
+.box {
+  width: 1200px;
+  margin: 0 auto 20px;
+}
+.box h1 {
+  margin-top: 8px;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 56px;
+  color: #333333;
+  font-weight: 600;
+  font-family: "PingFang SC";
+}
+.strong {
+  margin-top: 22px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: justify;
+  letter-spacing: 0.2px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+.strong p {
+  margin-bottom: 20px;
+}
+.box img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 20px;
+}

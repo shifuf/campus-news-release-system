@@ -1,0 +1,229 @@
+/* 
+* 留言板
+*/
+.bg {
+    background-color: #eef8ff; /* 设置背景颜色为浅蓝色 */
+    margin-bottom: 30px; /* 设置下边距为30像素 */
+}
+
+.header {
+    width: 1400px; /* 设置头部宽度为1400像素 */
+    height: 80px; /* 设置头部高度为80像素 */
+    margin: 0 auto; /* 设置头部水平居中 */
+    position: relative; /* 设置头部相对定位，以便于子元素使用绝对定位 */
+}
+
+.header-right {
+    position: absolute; /* 设置头部右侧部分为绝对定位，相对于头部 */
+    right: 0; /* 设置头部右侧部分的右边距为0，即紧贴头部的右边 */
+}
+
+nav ul {
+    display: flex; /* 设置导航栏的列表为弹性布局，可以自动调整子元素的大小和位置 */
+}
+
+nav a {
+    display: block; /* 设置导航栏的链接为块级元素，可以设置宽度和高度 */
+    color: #333; /* 设置导航栏的链接颜色为深灰色 */
+    height: 100%; /* 设置导航栏的链接高度为100%，即与父元素的高度相同 */
+    line-height: 38px; /* 设置导航栏的链接的行高为38像素，使文字垂直居中 */
+    padding: 0 14px; /* 设置导航栏的链接的内边距为0上下，14左右，增加水平间距 */
+    min-width: 36px; /* 设置导航栏的链接的最小宽度为36像素，防止文字被压缩 */
+    text-align: center; /* 设置导航栏的链接的文字水平居中 */
+}
+
+/* 激活 */
+.active a {
+    color: #37f; /* 设置激活状态的导航栏的链接颜色为蓝色 */
+    font-weight: 600; /* 设置激活状态的导航栏的链接字体加粗 */
+    border-radius: 2px; /* 设置激活状态的导航栏的链接的边框圆角为2像素 */
+}
+
+/* 头部开始 */
+.header,
+.top-left,
+.header-right {
+    display: flex; /* 设置头部，头部左侧部分，头部右侧部分为弹性布局，可以自动调整子元素的大小和位置 */
+    align-items: center; /* 设置头部，头部左侧部分，头部右侧部分的子元素垂直居中 */
+}
+
+/* 搜索 */
+.top-search {
+    width: 350px; /* 设置搜索框的宽度为350像素 */
+    height: 34px; /* 设置搜索框的高度为34像素 */
+    background-color: #f3f6f8; /* 设置搜索框的背景颜色为浅灰色 */
+    border: 1px solid #dfdfdf; /* 设置搜索框的边框颜色为深灰色 */
+    border-radius: 4px; /* 设置搜索框的边框圆角为4像素 */
+    line-height: 32px; /* 设置搜索框的行高为32像素，使文字垂直居中 */
+    position: relative; /* 设置搜索框为相对定位，以便于子元素使用绝对定位 */
+}
+
+/* 搜索框 */
+.top-search input {
+    background: none; /* 设置搜索框的输入框的背景为透明 */
+    border: 0; /* 设置搜索框的输入框的边框为0，即无边框 */
+    font-size: 14px; /* 设置搜索框的输入框的字体大小为14像素 */
+    height: 28px; /* 设置搜索框的输入框的高度为28像素 */
+    line-height: 22px; /* 设置搜索框的输入框的行高为22像素，使文字垂直居中 */
+    padding: 4px 10px; /* 设置搜索框的输入框的内边距为4上下，10左右，增加垂直和水平间距 */
+    width: 287px; /* 设置搜索框的输入框的宽度为287像素，留出一定空间给搜索按钮 */
+    outline: none; /* 设置搜索框的输入框的轮廓为无，即不显示输入框的焦点状态 */
+}
+
+/* 搜索按钮 */
+.top-search button {
+    border: 0; /* 设置搜索框的按钮的边框为0，即无边框 */
+    font-size: 14px; /* 设置搜索框的按钮的字体大小为14像素 */
+    line-height: 22px; /* 设置搜索框的按钮的行高为22像素，使文字垂直居中 */
+    padding: 6px 10px; /* 设置搜索框的按钮的内边距为6上下，10左右，增加垂直和水平间距 */
+    position: absolute; /* 设置搜索框的按钮为绝对定位，相对于搜索框 */
+    right: 0; /* 设置搜索框的按钮的右边距为0，即紧贴搜索框的右边 */
+    top: 0; /* 设置搜索框的按钮的上边距为0，即紧贴搜索框的上边 */
+    color: #fff; /* 设置搜索框的按钮的文字颜色为白色 */
+    background-color: #428bca; /* 设置搜索框的按钮的背景颜色为深蓝色 */
+    border-color: #357ebd; /* 设置搜索框的按钮的边框颜色为深蓝色 */
+    border-radius: 4px; /* 设置搜索框的按钮的边框圆角为4像素 */
+}
+
+/* 头部结束 */
+input,
+textarea {
+    border: 0; /* 设置输入框和文本域的边框为0，即无边框 */
+    outline: none; /* 设置输入框和文本域的轮廓为无，即不显示输入框和文本域的焦点状态 */
+    padding: 0 16px; /* 设置输入框和文本域的内边距为0上下，16左右，增加水平间距 */
+}
+
+body {
+    background: #f1f2f5; /* 设置网页的背景颜色为浅灰色 */
+}
+
+/* 留言板主体 */
+.box-container {
+    width: 600px; /* 设置留言板主体的宽度为600像素 */
+    margin: 0 auto; /* 设置留言板主体的水平居中 */
+}
+
+p {
+    font-size: 18px; /* 设置段落的字体大小为18像素 */
+    color: #333; /* 设置段落的字体颜色为深灰色 */
+    margin-bottom: 10px; /* 设置段落的下边距为10像素 */
+    margin-left: 10px; /* 设置段落的左边距为10像素 */
+}
+
+/* 昵称 */
+.nickName {
+    margin-top: 20px; /* 设置昵称的上边距为20像素 */
+    margin-bottom: 20px; /* 设置昵称的下边距为20像素 */
+}
+
+/* 昵称输入框 */
+/* 留言内容 */
+.nickName input,
+.message textarea {
+    width: 100%; /* 设置昵称输入框和留言内容文本域的宽度为100%，即与父元素的宽度相同 */
+    height: 40px; /* 设置昵称输入框和留言内容文本域的高度为40像素 */
+    border-radius: 8px; /* 设置昵称输入框和留言内容文本域的边框圆角为8像素 */
+    border: 1px solid #ccc; /* 设置昵称输入框和留言内容文本域的边框颜色为浅灰色 */
+    box-sizing: border-box; /* 设置昵称输入框和留言内容文本域的盒模型为边框盒，即宽度和高度包括边框和内边距 */
+}
+
+.nickName span,
+.message span {
+    color: red; /* 设置昵称和留言内容的提示文字的颜色为红色 */
+    margin-right: 10px; /* 设置昵称和留言内容的提示文字的右边距为10像素 */
+}
+
+/* 留言内容 */
+.message textarea {
+    height: 200px; /* 设置留言内容文本域的高度为200像素 */
+    padding-top: 16px; /* 设置留言内容文本域的上内边距为16像素，增加垂直间距 */
+}
+
+/* 发布 */
+.publish {
+    height: 48px; /* 设置发布按钮的高度为48像素 */
+    line-height: 48px; /* 设置发布按钮的行高为48像素，使文字垂直居中 */
+    color: #fff; /* 设置发布按钮的文字颜色为白色 */
+    background: #17A1FF; /* 设置发布按钮的背景颜色为深蓝色 */
+    border-radius: 24px; /* 设置发布按钮的边框圆角为24像素，即半圆 */
+    text-align: center; /* 设置发布按钮的文字水平居中 */
+    margin-top: 30px; /* 设置发布按钮的上边距为30像素 */
+}
+
+/* 滑动发布 */
+.publish:hover {
+    box-shadow: 0px 6px 8px 0px rgba(23, 161, 255, 0.4); /* 设置发布按钮在鼠标悬停时的阴影效果，颜色为深蓝色，透明度为0.4 */
+}
+
+/*  留言内容 */
+.msg-content {
+    width: 100%; /* 设置留言内容的宽度为100%，即与父元素的宽度相同 */
+    margin-top: 60px; /* 设置留言内容的上边距为60像素 */
+    border-radius: 5px; /* 设置留言内容的边框圆角为5像素 */
+}
+
+/* 留言数据 */
+.msg-body {
+    padding: 20px; /* 设置留言数据的内边距为20像素，增加空间 */
+    background-color: #fff; /* 设置留言数据的背景颜色为白色 */
+    margin-bottom: 30px; /* 设置留言数据的下边距为30像素 */
+}
+
+/* 留言 */
+.msg-top {
+    display: flex; /* 设置留言的布局为弹性布局，可以自动调整子元素的大小和位置 */
+    align-items: center; /* 设置留言的子元素垂直居中 */
+    margin-bottom: 20px; /* 设置留言的下边距为20像素 */
+    justify-content: space-between;
+}
+
+.msg-body span {
+    font-size: 15px; /* 设置留言的文字的字体大小为15像素 */
+    color: #9CA3AF; /* 设置留言的文字的颜色为浅灰色 */
+    margin-right: 20px; /* 设置留言的文字的右边距为20像素 */
+    line-height: 15px; /* 设置留言的文字的行高为15像素，使文字垂直居中 */
+}
+
+/* 回复图片 */
+.msg-avatar {
+    width: 40px; /* 设置回复图片的宽度为40像素 */
+    height: 40px; /* 设置回复图片的高度为40像素 */
+    border-radius: 50%; /* 设置回复图片的边框圆角为50%，即圆形 */
+    margin-right: 10px; /* 设置回复图片的右边距为10像素 */
+}
+
+.msg-icon {
+    width: 15px; /* 设置留言的图标的宽度为15像素 */
+    height: 15px; /* 设置留言的图标的高度为15像素 */
+    margin-right: 5px; /* 设置留言的图标的右边距为5像素 */
+    vertical-align: bottom; /* 设置留言的图标的垂直对齐方式为底部对齐 */
+}
+
+/* 回复按钮 */
+.msg-replies {
+    display: flex; /* 设置回复按钮的布局为弹性布局，可以自动调整子元素的大小和位置 */
+
+    justify-content: flex-end; /* 设置回复按钮的子元素水平对齐方式为右对齐 */
+}
+
+.replies-icon {
+    width: 18px; /* 设置回复按钮的图标的宽度为18像素 */
+    height: 18px; /* 设置回复按钮的图标的高度为18像素 */
+    margin-right: 5px; /* 设置回复按钮的图标的右边距为5像素 */
+    vertical-align: bottom; /* 设置回复按钮的图标的垂直对齐方式为底部对齐 */
+}
+
+.msg-replies a {
+    color: #9CA3AF; /* 设置回复按钮的链接的颜色为浅灰色 */
+    font-size: 15px; /* 设置回复按钮的链接的字体大小为15像素 */
+    text-decoration: none; /* 设置回复按钮的链接的文本装饰为无，即不显示下划线 */
+    margin-right: 10px; /* 设置回复按钮的链接的右边距为10像素 */
+}
+
+/* 被回复 */
+.be-msg {
+    margin-top: 20px; /* 设置被回复的留言的上边距为20像素 */
+    padding: 20px; /* 设置被回复的留言的内边距为20像素，增加空间 */
+    background-color: #F3F4F6; /* 设置被回复的留言的背景*/
+    border-radius: 5px; /* 设置被回复的留言圆角为5像素*/
+}

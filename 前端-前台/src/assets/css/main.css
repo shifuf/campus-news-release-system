@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #0c82ff;
+}
+
+body{
+    /* 宽度 */
+    /* width: 1400px; */
+    /* 高度 */
+    height: 80px;
+    /* 内容居中 */
+    margin: 0 auto;
+}
