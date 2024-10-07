@@ -15,19 +15,8 @@
 后端-服务端 Spring Boot3+MyBatis-Plus+Lombok+MySQL
 
  **前台** 
-![首页](%E9%A6%96%E9%A1%B5.png)
-![列表页](%E5%88%97%E8%A1%A8%E9%A1%B5.png)
-![输入图片说明](%E6%96%B0%E9%97%BB%E8%AF%A6%E6%83%85%E5%88%97%E8%A1%A8%E9%A1%B5.png)
-![输入图片说明](%E7%95%99%E8%A8%80%E9%A1%B5.png)
- **后台** 
-![登陆页](%E7%99%BB%E5%BD%95%E9%A1%B5.png)
-![用户管理列表](%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86%E5%88%97%E8%A1%A8.png)
-![新增用户](%E6%96%B0%E5%A2%9E%E7%94%A8%E6%88%B7.png)
-![编辑用户](%E7%BC%96%E8%BE%91%E7%94%A8%E6%88%B7.png)
-![分类类表](%E5%88%86%E7%B1%BB%E5%88%97%E8%A1%A8.png)
-![文章列表](%E6%96%87%E7%AB%A0%E5%88%97%E8%A1%A8.png)
-![文章发布-编辑](%E6%96%87%E7%AB%A0%E5%8F%91%E5%B8%83-%E7%BC%96%E8%BE%91.png)
-![输入图片说明](%E7%95%99%E8%A8%80%E5%88%97%E8%A1%A8.png)
+![首页](https://github.com/shifuf/campus-news-release-system/blob/main/img/%E9%A6%96%E9%A1%B5.png?raw=true)
+
 
 #### 安装教程
 
